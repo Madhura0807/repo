@@ -34,24 +34,6 @@ Currently focusing on:
 🔹 Exploring Machine Learning and Data Engineering  
 🔹 Contributing consistently to GitHub  
 
-
----
-
-# 🏆 Highlights
-
-🏅 Published research paper in **IJCRT** on Plant Leaf Disease Classification using MobileNetV2 Transfer Learning
-
-💻 Solved **200+ Data Structures & Algorithms problems on LeetCode**
-
-🚀 Built projects in:
-- Generative AI
-- Machine Learning
-- Computer Vision
-- Data Analytics
-
-
----
-
 # 🛠️ Tech Stack
 
 
@@ -115,18 +97,6 @@ Currently focusing on:
 
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Madhura0807&theme=tokyo-night"/>
-
-
-
-# 🐍 Contribution Snake Animation
-
-
-<p align="center">
-
-<img src="https://raw.githubusercontent.com/Madhura0807/Madhura0807/output/github-contribution-grid-snake.svg"/>
-
-</p>
-
 
 
 # 🌐 Connect With Me
