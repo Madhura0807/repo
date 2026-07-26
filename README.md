@@ -101,18 +101,6 @@ Currently focusing on:
 
 
 
-# 📊 GitHub Analytics
-
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Madhura0807&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Madhura0807&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</p>
-
-
 
 # 🔥 GitHub Streak
 
@@ -122,19 +110,6 @@ Currently focusing on:
 <img src="https://streak-stats.demolab.com?user=Madhura0807&theme=tokyonight&hide_border=true"/>
 
 </p>
-
-
-
-# 🏆 GitHub Trophy
-
-
-<p align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Madhura0807&theme=tokyonight&no-frame=true&row=1"/>
-
-</p>
-
-
 
 # 📈 Contribution Graph
 
