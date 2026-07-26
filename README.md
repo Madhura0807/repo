@@ -1,6 +1,9 @@
 # 👋 Hi, I'm Madhura Kale
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Computer+Engineering+Student;Software+Engineer+Enthusiast;AI+%7C+ML+%7C+RAG+Developer;Data+Analytics+Explorer;Building+Real+World+Solutions" />
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Computer+Engineering+Student;Software+Engineer+Enthusiast;AI+%7C+ML+Developer;RAG+Application+Builder;Data+Analytics+Explorer" />
+</p>
+
 
 <p align="center">
 <img src="https://komarev.com/ghpvc/?username=Madhura0807&label=Profile%20Views&color=blue&style=for-the-badge"/>
@@ -9,48 +12,42 @@
 
 ## 💫 About Me
 
-Hi, I'm **Madhura Kale**, a Computer Engineering undergraduate passionate about **Software Engineering, Artificial Intelligence, Machine Learning, and Data-Driven Systems**.
+Hi, I'm **Madhura Kale**, a Computer Engineering undergraduate passionate about **Software Engineering, Artificial Intelligence, Machine Learning, and Data-Driven Solutions**.
 
-I enjoy building practical applications using:
+I enjoy building practical applications using Python, Machine Learning, Large Language Models, Computer Vision, and Analytics.
 
-- Generative AI
-- Large Language Models
-- Retrieval-Augmented Generation (RAG)
-- Machine Learning
-- Computer Vision
-- Data Analytics
+Currently focusing on:
 
-Currently, I am focusing on building industry-ready projects, improving my Data Structures & Algorithms skills, and contributing consistently to open-source and GitHub.
-
-My goal is to become a **Software Engineer specializing in AI-powered scalable solutions.**
+- Generative AI and RAG Systems
+- Machine Learning Applications
+- Data Structures & Algorithms
+- Data Engineering Concepts
+- Building scalable software solutions
 
 
 ---
 
 # 🚀 Current Focus
 
-🔹 Building LLM and RAG applications  
-🔹 Developing Machine Learning projects  
-🔹 Improving Data Structures & Algorithms  
-🔹 Exploring Data Engineering concepts  
-🔹 Creating impactful software solutions  
+🔹 Building AI-powered applications  
+🔹 Improving DSA problem-solving skills  
+🔹 Exploring Machine Learning and Data Engineering  
+🔹 Contributing consistently to GitHub  
 
 
 ---
 
-# 🏆 Achievements
+# 🏆 Highlights
 
-🏅 Published Research Paper in **IJCRT** on:
+🏅 Published research paper in **IJCRT** on Plant Leaf Disease Classification using MobileNetV2 Transfer Learning
 
-**Plant Leaf Disease Classification using MobileNetV2 Transfer Learning**
+💻 Solved **200+ Data Structures & Algorithms problems on LeetCode**
 
-🚀 Built:
-- RAG-based Document Question Answering System
-- Machine Learning prediction systems
-- Computer Vision applications
-- Analytics dashboards
-
-💻 Solved **200+ DSA problems on LeetCode**
+🚀 Built projects in:
+- Generative AI
+- Machine Learning
+- Computer Vision
+- Data Analytics
 
 
 ---
@@ -60,114 +57,74 @@ My goal is to become a **Software Engineer specializing in AI-powered scalable s
 
 ## 👩‍💻 Programming Languages
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
 
 
 ## 🤖 AI / Machine Learning
 
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv)
-
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge)
-
+<p>
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Llama%203-0467DF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv"/>
+</p>
 
 
 ## 📊 Data Analytics
 
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
-
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy)
-
-![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi)
-
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel)
-
+<p>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy"/>
+<img src="https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi"/>
+<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau"/>
+<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel"/>
+</p>
 
 
 ## 🌐 Development
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
-
-![Flask](https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=flask)
-
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5)
-
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
-
+<p>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react"/>
+<img src="https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=flask"/>
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3"/>
+<img src="https://img.shields.io/badge/REST%20API-009688?style=for-the-badge"/>
+</p>
 
 
 ## 🗄️ Database & Tools
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
-
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux)
-
-
-
----
-
-# 🚀 Featured Projects
+<p>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql"/>
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+</p>
 
 
-## 🤖 DocuMind AI - RAG Document Assistant
-
-Python | LangChain | FAISS | Llama 3 | Streamlit
-
-- Built multi-document question answering system
-- Implemented semantic search using embeddings
-- Reduced hallucination using context-based prompting
-
-
-## 🌱 Plant Disease Classification
-
-MobileNetV2 | Transfer Learning | Deep Learning
-
-- Published research paper
-- Built image classification web application
-
-
-## 📈 Student Performance Prediction
-
-Python | Machine Learning | Flask
-
-- Regression-based prediction system
-- Deployed ML model using REST API
-
-
-
----
 
 # 📊 GitHub Analytics
 
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Madhura0807&show_icons=true&theme=tokyonight&hide_border=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Madhura0807&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Madhura0807&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Madhura0807&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
 
 
----
 
 # 🔥 GitHub Streak
 
@@ -179,7 +136,6 @@ Python | Machine Learning | Flask
 </p>
 
 
----
 
 # 🏆 GitHub Trophy
 
@@ -191,7 +147,6 @@ Python | Machine Learning | Flask
 </p>
 
 
----
 
 # 📈 Contribution Graph
 
@@ -199,7 +154,6 @@ Python | Machine Learning | Flask
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Madhura0807&theme=tokyo-night"/>
 
 
----
 
 # 🐍 Contribution Snake Animation
 
@@ -211,19 +165,17 @@ Python | Machine Learning | Flask
 </p>
 
 
----
 
-# 📫 Connect With Me
+# 🌐 Connect With Me
 
+<p align="center">
 
-LinkedIn:
-https://linkedin.com/in/madhura-kale-979833291
+<a href="https://linkedin.com/in/madhura-kale-979833291">
+<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
+</a>
 
+<a href="mailto:madhurakale0807@gmail.com">
+<img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail"/>
+</a>
 
-Email:
-madhurakale0807@gmail.com
-
-
----
-
-⭐ Thanks for visiting my profile!
+</p>
