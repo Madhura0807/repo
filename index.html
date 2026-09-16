@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhura Kale — Data Science &amp; Software Engineering Portfolio</title>
+  <meta name="description" content="Madhura Kale — Computer Engineering undergraduate (Class of 2027). Hands-on experience across Data Analytics, Machine Learning, Generative AI (LLMs/RAG), and Full Stack Development. Published researcher in IJCRT." />
+  <meta name="keywords" content="Madhura Kale, Data Science, Machine Learning, Python, Power BI, SQL, GenAI, RAG, Computer Vision, Portfolio, AISSMS" />
+  <meta name="author" content="Madhura Kale" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+
+  <!-- Google Fonts: JetBrains Mono (Code/Mono), Space Grotesk (Headings/Display), IBM Plex Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Main IDE Application Container -->
+  <div class="app">
+
+    <!-- Top Window Titlebar -->
+    <header class="titlebar" role="banner">
+      <div class="dots" aria-hidden="true">
+        <span class="dot r" title="Close"></span>
+        <span class="dot y" title="Minimize"></span>
+        <span class="dot g" title="Expand"></span>
+      </div>
+      <div class="title-c">
+        <span class="mod" aria-hidden="true"></span>
+        <span class="title-text">portfolio.dev — Madhura Kale — Visual Studio Code</span>
+      </div>
+      <div class="titlebar-actions">
+        <!-- Quick Search / Command Palette trigger -->
+        <button class="tbtn cmd-trigger" id="cmd-btn" title="Quick Command Palette (Ctrl+K)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <span class="cmd-hint"><kbd>Ctrl</kbd> <kbd>K</kbd></span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="tbtn" id="theme-toggle" aria-label="Toggle dark and light mode">
+          <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+          <span id="theme-label">Dark</span>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="Madhura_Kale_Resume.pdf" target="_blank" download="Madhura_Kale_Resume.pdf" class="tbtn tbtn-primary" id="hire-btn" title="Download Madhura's Resume (PDF)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Resume (PDF)</span>
+        </a>
+
+        <!-- Mobile Sidebar Toggle -->
+        <button class="tbtn mobile-menu-btn" id="mobile-toggle" aria-label="Toggle explorer sidebar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- IDE Body: Activity Bar + Sidebar + Main Editor Area -->
+    <div class="body">
+
+      <!-- Left Activity Bar -->
+      <nav class="activity" aria-label="Activity Bar">
+        <button class="act on" id="act-explorer" data-panel="explorer" title="Explorer (Ctrl+Shift+E)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <button class="act" id="act-search" data-panel="search" title="Search Skills &amp; Projects">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="act" id="act-git" data-panel="git" title="Source Control (Git)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 3-3 3.5-7 4"/></svg>
+        </button>
+        <button class="act" id="act-cert" data-panel="cert" title="Certifications &amp; Badges">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </button>
+        <div class="activity-spacer"></div>
+        <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="act" title="GitHub /Madhura0807">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/madhura-kale-979833291" target="_blank" rel="noopener noreferrer" class="act" title="LinkedIn /madhura-kale">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </nav>
+
+      <!-- Sidebar / File Explorer -->
+      <aside class="sidebar" id="sidebar">
+        <div class="side-h">
+          <span>EXPLORER</span>
+          <div class="side-actions">
+            <span class="badge-mini" title="Active Branch">main</span>
+          </div>
+        </div>
+
+        <div class="tree" role="tree" aria-label="Project Structure">
+          <div class="folder expanded" id="folder-root">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="caret" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            <span class="folder-name">MADHURA-PORTFOLIO</span>
+          </div>
+
+          <div class="nest">
+            <!-- Navigation File Items -->
+            <div class="file active" data-go="about" role="treeitem" tabindex="0">
+              <span class="ic ext-md" aria-hidden="true">M↓</span>
+              <span class="filename">about.md</span>
+            </div>
+
+            <div class="file" data-go="skills" role="treeitem" tabindex="0">
+              <span class="ic ext-json" aria-hidden="true">{}</span>
+              <span class="filename">skills.json</span>
+            </div>
+
+            <!-- Projects Folder -->
+            <div class="folder expanded" id="folder-projects">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="caret" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span class="folder-name">projects/</span>
+            </div>
+            <div class="nest">
+              <div class="file" data-go="projects" data-proj="churn" role="treeitem" tabindex="0">
+                <span class="ic ext-py" aria-hidden="true">py</span>
+                <span class="filename">churn_prediction.py</span>
+              </div>
+              <div class="file" data-go="projects" data-proj="rag" role="treeitem" tabindex="0">
+                <span class="ic ext-py" aria-hidden="true">py</span>
+                <span class="filename">legal_rag_reader.py</span>
+              </div>
+              <div class="file" data-go="projects" data-proj="nlp" role="treeitem" tabindex="0">
+                <span class="ic ext-py" aria-hidden="true">py</span>
+                <span class="filename">transaction_engine.py</span>
+              </div>
+              <div class="file" data-go="projects" data-proj="cv" role="treeitem" tabindex="0">
+                <span class="ic ext-py" aria-hidden="true">py</span>
+                <span class="filename">sign_language_cv.py</span>
+              </div>
+              <div class="file" data-go="projects" data-proj="perf" role="treeitem" tabindex="0">
+                <span class="ic ext-py" aria-hidden="true">py</span>
+                <span class="filename">student_performance.py</span>
+              </div>
+              <div class="file" data-go="projects" data-proj="attr" role="treeitem" tabindex="0">
+                <span class="ic ext-py" aria-hidden="true">py</span>
+                <span class="filename">employee_attrition.py</span>
+              </div>
+            </div>
+
+            <!-- Research Publication -->
+            <div class="file" data-go="research" role="treeitem" tabindex="0">
+              <span class="ic ext-py" aria-hidden="true">★</span>
+              <span class="filename">research_paper.py</span>
+            </div>
+
+            <!-- Education -->
+            <div class="file" data-go="education" role="treeitem" tabindex="0">
+              <span class="ic ext-yaml" aria-hidden="true">≣</span>
+              <span class="filename">education.yaml</span>
+            </div>
+
+            <!-- Certifications -->
+            <div class="file" data-go="certifications" role="treeitem" tabindex="0">
+              <span class="ic ext-json" aria-hidden="true">{}</span>
+              <span class="filename">certifications.json</span>
+            </div>
+
+            <!-- Achievements & Leadership -->
+            <div class="file" data-go="achievements" role="treeitem" tabindex="0">
+              <span class="ic ext-yaml" aria-hidden="true">≣</span>
+              <span class="filename">achievements.yaml</span>
+            </div>
+
+            <!-- Contact Terminal -->
+            <div class="file" data-go="contact" role="treeitem" tabindex="0">
+              <span class="ic ext-sh" aria-hidden="true">$_</span>
+              <span class="filename">contact.sh</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Footer: Quick Info Card -->
+        <div class="side-footer">
+          <div class="sf-item">
+            <span class="sf-label">STATUS</span>
+            <span class="sf-val"><span class="status-dot"></span> Open to Internships</span>
+          </div>
+          <div class="sf-item">
+            <span class="sf-label">BATCH</span>
+            <span class="sf-val">Class of 2027 (B.Tech)</span>
+          </div>
+          <div class="sf-item">
+            <span class="sf-label">LOCATION</span>
+            <span class="sf-val">Pune, Maharashtra, IN</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Editor Container -->
+      <main class="editor" role="main">
+
+        <!-- Editor Tabs Bar -->
+        <div class="tabs" id="tabs" role="tablist">
+          <button class="tab active" data-go="about" role="tab" aria-selected="true" id="tab-about">
+            <span class="ic ext-md" aria-hidden="true">M↓</span>
+            <span class="tab-label">about.md</span>
+            <span class="x" aria-hidden="true">×</span>
+          </button>
+          <button class="tab" data-go="skills" role="tab" aria-selected="false" id="tab-skills">
+            <span class="ic ext-json" aria-hidden="true">{}</span>
+            <span class="tab-label">skills.json</span>
+            <span class="x" aria-hidden="true">×</span>
+          </button>
+          <button class="tab" data-go="projects" role="tab" aria-selected="false" id="tab-projects">
+            <span class="ic ext-py" aria-hidden="true">py</span>
+            <span class="tab-label">projects.py</span>
+            <span class="x" aria-hidden="true">×</span>
+          </button>
+          <button class="tab" data-go="research" role="tab" aria-selected="false" id="tab-research">
+            <span class="ic ext-py" aria-hidden="true">★</span>
+            <span class="tab-label">research_paper.py</span>
+            <span class="x" aria-hidden="true">×</span>
+          </button>
+          <button class="tab" data-go="education" role="tab" aria-selected="false" id="tab-education">
+            <span class="ic ext-yaml" aria-hidden="true">≣</span>
+            <span class="tab-label">education.yaml</span>
+            <span class="x" aria-hidden="true">×</span>
+          </button>
+          <button class="tab" data-go="certifications" role="tab" aria-selected="false" id="tab-certifications">
+            <span class="ic ext-json" aria-hidden="true">{}</span>
+            <span class="tab-label">certifications.json</span>
+            <span class="x" aria-hidden="true">×</span>
+          </button>
+          <button class="tab" data-go="contact" role="tab" aria-selected="false" id="tab-contact">
+            <span class="ic ext-sh" aria-hidden="true">$_</span>
+            <span class="tab-label">contact.sh</span>
+            <span class="x" aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <!-- Scrollable Document Area -->
+        <div class="scroll" id="scroll">
+
+          <!-- ===================================================================
+               SECTION 1: HERO / ABOUT.MD
+               =================================================================== -->
+          <section id="about" class="doc-section" data-section="about">
+            <div class="sec-path">
+              <span class="crumb">madhura-portfolio</span>
+              <span class="sep">›</span>
+              <span class="file-crumb">about.md</span>
+              <span class="badge-tag">Markdown Preview</span>
+            </div>
+
+            <div class="hero">
+              <div class="hero-grid">
+                <div class="hero-content">
+                  <div class="badge">
+                    <span class="pulse"><i></i><i></i></span>
+                    <span>AVAILABLE FOR SOFTWARE ENGINEERING &amp; AI/DATA INTERNSHIPS</span>
+                  </div>
+
+                  <p class="h-name">// hi, my name is <b>Madhura Kale</b></p>
+                  
+                  <h1 class="title">
+                    Computer Engineer <br />
+                    <span class="dim">&amp; Data Scientist</span>
+                  </h1>
+
+                  <p class="h-blurb">
+                    B.Tech Computer Engineering undergraduate (<b>Class of 2027</b>) at <b>AISSMS IOIT Pune</b> with hands-on experience across
+                    <b>Data Analytics, Machine Learning, Generative AI (LLMs/RAG), Computer Vision</b>, and
+                    <b>Full Stack Development</b>. Published peer-reviewed research author in <b>IJCRT</b>, and
+                    active algorithmic problem solver with <b>200+ LeetCode DSA</b> problems solved.
+                  </p>
+
+                  <!-- Key Stats Bar -->
+                  <div class="stats-row">
+                    <div class="stat-pill">
+                      <span class="stat-val">7.34 / 10</span>
+                      <span class="stat-lbl">CGPA (B.Tech)</span>
+                    </div>
+                    <div class="stat-pill">
+                      <span class="stat-val">200+</span>
+                      <span class="stat-lbl">LeetCode Solved</span>
+                    </div>
+                    <div class="stat-pill">
+                      <span class="stat-val">1 Paper</span>
+                      <span class="stat-lbl">Published (IJCRT)</span>
+                    </div>
+                    <div class="stat-pill">
+                      <span class="stat-val">6+</span>
+                      <span class="stat-lbl">Applied ML Projects</span>
+                    </div>
+                  </div>
+
+                  <!-- CTAs -->
+                  <div class="h-cta">
+                    <button class="btn btn-primary" data-go="projects">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                      <span>Explore Projects</span>
+                    </button>
+                    <a href="Madhura_Kale_Resume.pdf" target="_blank" download="Madhura_Kale_Resume.pdf" class="btn btn-ghost" title="Download Resume PDF">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                      <span>Download Resume</span>
+                    </a>
+                    <button class="btn btn-ghost" data-go="contact">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                      <span>Get in Touch</span>
+                    </button>
+                    
+                    <div class="socials" aria-label="Social profiles">
+                      <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="soc" title="GitHub profile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                      </a>
+                      <a href="https://linkedin.com/in/madhura-kale-979833291" target="_blank" rel="noopener noreferrer" class="soc" title="LinkedIn profile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                      </a>
+                      <a href="mailto:madhurakale0807@gmail.com" class="soc" title="Send Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Avatar Card with IDE aesthetic & Photo -->
+                <div class="avatar-card">
+                  <div class="avatar-glow" aria-hidden="true"></div>
+                  <div class="avatar-frame">
+                    <div class="avatar-bar">
+                      <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+                      <span>engineer.profile</span>
+                    </div>
+                    <div class="avatar-img-container">
+                      <img src="profile.jpg" alt="Madhura Kale — Computer Engineering &amp; Data Science" class="avatar-photo" />
+                      <div class="avatar-meta">
+                        <div class="vrf" title="Verified Engineer">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <div class="avatar-meta-info">
+                          <b>Madhura Kale</b>
+                          <span>B.Tech Computer Engineering • Pune</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===================================================================
+               SECTION 2: SKILLS.JSON
+               =================================================================== -->
+          <section id="skills" class="doc-section sec-pad" data-section="skills">
+            <div class="sec-path">
+              <span class="crumb">madhura-portfolio</span>
+              <span class="sep">›</span>
+              <span class="file-crumb">skills.json</span>
+              <span class="badge-tag">Technical Stack</span>
+            </div>
+
+            <div class="sec-header">
+              <span class="sec-label">// skills.json — core technologies &amp; competencies</span>
+              <h2 class="sec-h">Technical Skills &amp; Stack</h2>
+              <p class="sec-sub">
+                A verified breakdown of technical capabilities from my resume spanning end-to-end Machine Learning,
+                Data Analytics, Generative AI, Full-Stack development, and Computer Science fundamentals.
+              </p>
+            </div>
+
+            <!-- Skills Filter / Category Pills -->
+            <div class="skills-filter-bar" id="skills-filter-bar">
+              <button class="filter-pill active" data-cat="all">All (All Categories)</button>
+              <button class="filter-pill" data-cat="data">Data &amp; Analytics</button>
+              <button class="filter-pill" data-cat="ml">Machine Learning &amp; CV</button>
+              <button class="filter-pill" data-cat="genai">Generative AI &amp; LLMs</button>
+              <button class="filter-pill" data-cat="languages">Languages</button>
+              <button class="filter-pill" data-cat="backend">Backend &amp; Web</button>
+              <button class="filter-pill" data-cat="databases">Databases &amp; Cloud</button>
+              <button class="filter-pill" data-cat="core">Core CS &amp; Tools</button>
+            </div>
+
+            <!-- Categorized Skills Grid -->
+            <div class="skills-matrix" id="skills-matrix">
+              
+              <!-- Data & Analytics -->
+              <div class="skill-group" data-category="data">
+                <div class="sg-header">
+                  <div class="sg-icon data-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                  </div>
+                  <div>
+                    <h3>Data &amp; Analytics</h3>
+                    <span class="sg-meta">EDA, Dashboards &amp; Statistics</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span class="chip"><span class="b"></span>Pandas</span>
+                  <span class="chip"><span class="b"></span>NumPy</span>
+                  <span class="chip"><span class="b"></span>Scikit-learn</span>
+                  <span class="chip"><span class="b"></span>EDA</span>
+                  <span class="chip"><span class="b"></span>Data Cleaning</span>
+                  <span class="chip"><span class="b"></span>Feature Engineering</span>
+                  <span class="chip"><span class="b"></span>KPI Analysis</span>
+                  <span class="chip"><span class="b"></span>Data Visualization</span>
+                  <span class="chip"><span class="b"></span>Power BI</span>
+                  <span class="chip"><span class="b"></span>DAX</span>
+                  <span class="chip"><span class="b"></span>Excel</span>
+                  <span class="chip"><span class="b"></span>Tableau</span>
+                </div>
+              </div>
+
+              <!-- Machine Learning & Deep Learning -->
+              <div class="skill-group" data-category="ml">
+                <div class="sg-header">
+                  <div class="sg-icon ml-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  </div>
+                  <div>
+                    <h3>Machine Learning &amp; Computer Vision</h3>
+                    <span class="sg-meta">Models, Vision &amp; Transfer Learning</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span class="chip"><span class="b"></span>Machine Learning</span>
+                  <span class="chip"><span class="b"></span>Deep Learning</span>
+                  <span class="chip"><span class="b"></span>Computer Vision</span>
+                  <span class="chip"><span class="b"></span>NLP</span>
+                  <span class="chip"><span class="b"></span>Transfer Learning (MobileNetV2)</span>
+                  <span class="chip"><span class="b"></span>Model Training &amp; Evaluation</span>
+                  <span class="chip"><span class="b"></span>TensorFlow</span>
+                  <span class="chip"><span class="b"></span>OpenCV</span>
+                  <span class="chip"><span class="b"></span>MediaPipe (21 Hand Landmarks)</span>
+                </div>
+              </div>
+
+              <!-- Generative AI & LLMs -->
+              <div class="skill-group" data-category="genai">
+                <div class="sg-header">
+                  <div class="sg-icon genai-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+                  </div>
+                  <div>
+                    <h3>Generative AI &amp; LLMs</h3>
+                    <span class="sg-meta">RAG, Embeddings &amp; Vector Search</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span class="chip"><span class="b"></span>LLMs</span>
+                  <span class="chip"><span class="b"></span>RAG (Retrieval-Augmented Generation)</span>
+                  <span class="chip"><span class="b"></span>LangChain</span>
+                  <span class="chip"><span class="b"></span>Prompt Engineering</span>
+                  <span class="chip"><span class="b"></span>Embedding Generation</span>
+                  <span class="chip"><span class="b"></span>Vector Databases (FAISS)</span>
+                  <span class="chip"><span class="b"></span>Groq LLM</span>
+                  <span class="chip"><span class="b"></span>FastEmbed</span>
+                </div>
+              </div>
+
+              <!-- Programming Languages -->
+              <div class="skill-group" data-category="languages">
+                <div class="sg-header">
+                  <div class="sg-icon lang-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  </div>
+                  <div>
+                    <h3>Programming Languages</h3>
+                    <span class="sg-meta">System &amp; Scripting</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span class="chip"><span class="b"></span>Python</span>
+                  <span class="chip"><span class="b"></span>Java</span>
+                  <span class="chip"><span class="b"></span>C++</span>
+                  <span class="chip"><span class="b"></span>SQL</span>
+                </div>
+              </div>
+
+              <!-- Backend & Web Technologies -->
+              <div class="skill-group" data-category="backend">
+                <div class="sg-header">
+                  <div class="sg-icon backend-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                  </div>
+                  <div>
+                    <h3>Backend, APIs &amp; Web</h3>
+                    <span class="sg-meta">REST Frameworks &amp; Full Stack</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span class="chip"><span class="b"></span>FastAPI</span>
+                  <span class="chip"><span class="b"></span>Flask</span>
+                  <span class="chip"><span class="b"></span>Streamlit</span>
+                  <span class="chip"><span class="b"></span>Postman</span>
+                  <span class="chip"><span class="b"></span>REST APIs</span>
+                  <span class="chip"><span class="b"></span>React.js</span>
+                  <span class="chip"><span class="b"></span>HTML / CSS</span>
+                </div>
+              </div>
+
+              <!-- Databases & Cloud -->
+              <div class="skill-group" data-category="databases">
+                <div class="sg-header">
+                  <div class="sg-icon db-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  </div>
+                  <div>
+                    <h3>Databases &amp; Cloud</h3>
+                    <span class="sg-meta">Relational, Document &amp; Cloud Fundamentals</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span class="chip"><span class="b"></span>MySQL</span>
+                  <span class="chip"><span class="b"></span>MongoDB</span>
+                  <span class="chip"><span class="b"></span>SQLite</span>
+                  <span class="chip"><span class="b"></span>AWS Fundamentals</span>
+                  <span class="chip"><span class="b"></span>Azure Fundamentals</span>
+                </div>
+              </div>
+
+              <!-- CS Fundamentals & Tools -->
+              <div class="skill-group" data-category="core">
+                <div class="sg-header">
+                  <div class="sg-icon core-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </div>
+                  <div>
+                    <h3>CS Fundamentals &amp; Dev Tools</h3>
+                    <span class="sg-meta">Engineering Principles &amp; Tooling</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span class="chip"><span class="b"></span>DSA (Data Structures &amp; Algorithms)</span>
+                  <span class="chip"><span class="b"></span>OOP (Object-Oriented Programming)</span>
+                  <span class="chip"><span class="b"></span>DBMS</span>
+                  <span class="chip"><span class="b"></span>Operating Systems</span>
+                  <span class="chip"><span class="b"></span>Computer Networks</span>
+                  <span class="chip"><span class="b"></span>Git</span>
+                  <span class="chip"><span class="b"></span>GitHub</span>
+                  <span class="chip"><span class="b"></span>VS Code</span>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ===================================================================
+               SECTION 3: PROJECTS/
+               =================================================================== -->
+          <section id="projects" class="doc-section sec-pad" data-section="projects">
+            <div class="sec-path">
+              <span class="crumb">madhura-portfolio</span>
+              <span class="sep">›</span>
+              <span class="file-crumb">projects/</span>
+              <span class="badge-tag">Featured Work</span>
+            </div>
+
+            <div class="sec-header">
+              <span class="sec-label">// projects/ — applied data science &amp; software engineering</span>
+              <h2 class="sec-h">Featured Projects</h2>
+              <p class="sec-sub">
+                End-to-end data analytics pipelines, deep learning computer vision architectures, generative AI RAG applications,
+                and predictive machine learning models built from real-world datasets.
+              </p>
+            </div>
+
+            <div class="proj-grid">
+
+              <!-- Project 1: Customer Churn Analysis & Prediction -->
+              <article class="proj feat" id="proj-churn">
+                <div class="proj-top">
+                  <div class="proj-ic vi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                  </div>
+                  <div class="proj-badges">
+                    <span class="tag tag-accent">Featured ML &amp; BI</span>
+                    <span class="tag">End-to-End Pipeline</span>
+                  </div>
+                </div>
+
+                <h3>Customer Churn Analysis and Prediction</h3>
+                <p class="proj-desc">
+                  Analyzed multi-table customer, subscription, and transaction datasets to uncover root causes of churn, 
+                  synthesizing findings into an executive Power BI dashboard and machine learning classification models.
+                </p>
+
+                <!-- Project Highlights List -->
+                <ul class="proj-bullets">
+                  <li><strong>Data Engineering &amp; EDA:</strong> Cleaned datasets using Python, Pandas, NumPy, and SQL, engineering high-impact customer retention features and tracking lifetime KPI metrics.</li>
+                  <li><strong>Interactive Power BI Dashboard:</strong> Built comprehensive data models with DAX measures, dynamic slicers, and drill-downs to track churn rates, revenue leakages, and high-risk user segments.</li>
+                  <li><strong>Predictive Classification:</strong> Developed and benchmarked Logistic Regression, Random Forest, and XGBoost classifiers; evaluated rigorously on Precision, Recall, F1-score, and ROC-AUC.</li>
+                </ul>
+
+                <!-- Key Metrics -->
+                <div class="proj-metrics">
+                  <div class="pm-item">
+                    <span class="pm-val">Multi-Model</span>
+                    <span class="pm-lbl">LogReg, RF, XGBoost</span>
+                  </div>
+                  <div class="pm-item">
+                    <span class="pm-val">DAX &amp; KPIs</span>
+                    <span class="pm-lbl">Power BI Dashboard</span>
+                  </div>
+                  <div class="pm-item">
+                    <span class="pm-val">ROC-AUC</span>
+                    <span class="pm-lbl">Performance Evaluation</span>
+                  </div>
+                </div>
+
+                <!-- Tech Tags -->
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Power BI</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">XGBoost</span>
+                  <span class="tech-tag">DAX</span>
+                </div>
+
+                <div class="proj-footer">
+                  <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="proj-link">
+                    <span>View on GitHub</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 2: Legal Document Reader (RAG) -->
+              <article class="proj feat" id="proj-rag">
+                <div class="proj-top">
+                  <div class="proj-ic gr">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  </div>
+                  <div class="proj-badges">
+                    <span class="tag tag-accent">Generative AI</span>
+                    <span class="tag">Full-Stack RAG</span>
+                  </div>
+                </div>
+
+                <h3>Legal Document Reader (RAG System)</h3>
+                <p class="proj-desc">
+                  Built an end-to-end Retrieval-Augmented Generation (RAG) application enabling lawyers and researchers to query complex legal documents through natural language, receiving grounded, contextual answers with source citations.
+                </p>
+
+                <ul class="proj-bullets">
+                  <li><strong>Document Processing &amp; OCR:</strong> Implemented OCR ingestion and intelligent text chunking to preserve semantic clauses across complex legal texts.</li>
+                  <li><strong>Embeddings &amp; Vector Indexing:</strong> Generated vector embeddings via FastEmbed and indexed them in FAISS vector database for ultra-low latency semantic similarity search.</li>
+                  <li><strong>FastAPI &amp; MongoDB Backend:</strong> Engineered RESTful APIs with MongoDB for session persistence, uploaded document management, and Q&amp;A history.</li>
+                  <li><strong>Modern React/Vite UI:</strong> Built a responsive, intuitive interface enabling drag-and-drop file upload and conversational legal querying powered by Groq LLM inference.</li>
+                </ul>
+
+                <div class="proj-metrics">
+                  <div class="pm-item">
+                    <span class="pm-val">FAISS</span>
+                    <span class="pm-lbl">Vector Similarity Search</span>
+                  </div>
+                  <div class="pm-item">
+                    <span class="pm-val">Groq LLM</span>
+                    <span class="pm-lbl">Sub-second Inference</span>
+                  </div>
+                  <div class="pm-item">
+                    <span class="pm-val">Full-Stack</span>
+                    <span class="pm-lbl">FastAPI + React.js</span>
+                  </div>
+                </div>
+
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">RAG</span>
+                  <span class="tech-tag">FAISS</span>
+                  <span class="tech-tag">Groq LLM</span>
+                  <span class="tech-tag">FastEmbed</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">React.js</span>
+                </div>
+
+                <div class="proj-footer">
+                  <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="proj-link">
+                    <span>View on GitHub</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 3: Transaction Intelligence Engine -->
+              <article class="proj" id="proj-nlp">
+                <div class="proj-top">
+                  <div class="proj-ic vi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                  </div>
+                  <span class="tag">NLP &amp; Hybrid AI</span>
+                </div>
+
+                <h4>Transaction Intelligence Engine</h4>
+                <p class="proj-desc">
+                  High-throughput Python engine designed to parse and classify messy, unstructured banking transaction descriptions into standardized merchant identities, spending categories, and confidence levels.
+                </p>
+
+                <ul class="proj-bullets">
+                  <li>Combined rule-based parsing, regex pattern matching, and fuzzy string matching via RapidFuzz.</li>
+                  <li>Integrated Groq LLM as an intelligent fallback layer for ambiguous descriptors.</li>
+                  <li>Implemented LRU caching and batch processing pipeline to maximize classification throughput and minimize token costs.</li>
+                </ul>
+
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">NLP</span>
+                  <span class="tech-tag">RapidFuzz</span>
+                  <span class="tech-tag">Groq LLM</span>
+                  <span class="tech-tag">Regex</span>
+                  <span class="tech-tag">Caching</span>
+                </div>
+
+                <div class="proj-footer">
+                  <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="proj-link">
+                    <span>View Repository</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 4: Sign Language Detection System -->
+              <article class="proj" id="proj-cv">
+                <div class="proj-top">
+                  <div class="proj-ic vi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+                  </div>
+                  <span class="tag">Computer Vision</span>
+                </div>
+
+                <h4>Sign Language Detection System</h4>
+                <p class="proj-desc">
+                  Real-time accessibility application converting sign language hand gestures into live text captions directly from a camera feed with low processing latency.
+                </p>
+
+                <ul class="proj-bullets">
+                  <li>Tracked <strong>21 hand landmarks</strong> per frame in 3D coordinate space using Google MediaPipe.</li>
+                  <li>Mapped spatial landmark coordinate geometries into normalized feature vectors fed to Scikit-learn classifiers.</li>
+                  <li>Optimized video frame throughput with OpenCV to deliver fluid, real-time predictions.</li>
+                </ul>
+
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">OpenCV</span>
+                  <span class="tech-tag">MediaPipe</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Landmark Tracking</span>
+                </div>
+
+                <div class="proj-footer">
+                  <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="proj-link">
+                    <span>View Repository</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 5: Student Performance Prediction -->
+              <article class="proj" id="proj-perf">
+                <div class="proj-top">
+                  <div class="proj-ic vi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  </div>
+                  <span class="tag">Regression Pipeline</span>
+                </div>
+
+                <h4>Student Performance Prediction</h4>
+                <p class="proj-desc">
+                  Predictive regression pipeline modeling student examination performance based on historical academic and demographic parameters.
+                </p>
+
+                <ul class="proj-bullets">
+                  <li>Conducted rigorous data cleaning, correlation analysis, and feature transformation on educational data.</li>
+                  <li>Benchmarked Linear Regression, Random Forest, and CatBoost models against RMSE and R² metrics.</li>
+                  <li><strong>Achieved an R² score of 0.692</strong> with a tight average prediction error margin of only 5–6 marks.</li>
+                </ul>
+
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">CatBoost</span>
+                  <span class="tech-tag">Regression (R²: 0.692)</span>
+                </div>
+
+                <div class="proj-footer">
+                  <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="proj-link">
+                    <span>View Repository</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 6: IBM HR Employee Attrition Prediction -->
+              <article class="proj" id="proj-attr">
+                <div class="proj-top">
+                  <div class="proj-ic vi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <span class="tag">HR Analytics &amp; BI</span>
+                </div>
+
+                <h4>IBM HR Employee Attrition Prediction</h4>
+                <p class="proj-desc">
+                  Machine learning model and executive Power BI dashboard analyzing workforce dynamics and predicting employee turnover risks.
+                </p>
+
+                <ul class="proj-bullets">
+                  <li>Analyzed <strong>1,470 employee records across 35 workforce attributes</strong>, handling imbalanced turnover classes.</li>
+                  <li>Trained and compared classification algorithms to identify primary attrition drivers (overtime, compensation, tenure).</li>
+                  <li>Synthesized actionable insights into an interactive Power BI dashboard for HR stakeholders.</li>
+                </ul>
+
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Power BI</span>
+                  <span class="tech-tag">1,470 Records</span>
+                </div>
+
+                <div class="proj-footer">
+                  <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="proj-link">
+                    <span>View Repository</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  </a>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <!-- ===================================================================
+               SECTION 4: RESEARCH PUBLICATION (RESEARCH_PAPER.PY)
+               =================================================================== -->
+          <section id="research" class="doc-section sec-pad" data-section="research">
+            <div class="sec-path">
+              <span class="crumb">madhura-portfolio</span>
+              <span class="sep">›</span>
+              <span class="file-crumb">research_paper.py</span>
+              <span class="badge-tag">Peer-Reviewed Publication</span>
+            </div>
+
+            <div class="sec-header">
+              <span class="sec-label">// research_paper.py — academic publication</span>
+              <h2 class="sec-h">Peer-Reviewed Research Publication</h2>
+              <p class="sec-sub">
+                Original research paper published in an international journal focusing on transfer learning computer vision models for automated agricultural diagnostics.
+              </p>
+            </div>
+
+            <div class="research-card">
+              <div class="rc-header">
+                <div class="rc-tag">
+                  <span class="tag-gold">Published in IJCRT</span>
+                  <span class="tag">Deep Learning &amp; Computer Vision</span>
+                </div>
+                <h3 class="rc-title">Deep Learning-Based Web App for Plant Leaf Disease Classification Using MobileNetV2</h3>
+                <p class="rc-journal">
+                  <strong>Journal:</strong> International Journal of Creative Research Thoughts (IJCRT) &bull; 
+                  <strong>Author:</strong> Madhura Kale
+                </p>
+              </div>
+
+              <div class="rc-body">
+                <div class="rc-column">
+                  <h4>Research Highlights &amp; Methodology</h4>
+                  <ul class="rc-list">
+                    <li>
+                      <strong>MobileNetV2 Transfer Learning:</strong> Leveraged lightweight depthwise separable convolutions in MobileNetV2, fine-tuning pre-trained weights to classify agricultural leaf diseases with high precision and minimal computational overhead.
+                    </li>
+                    <li>
+                      <strong>End-to-End Diagnostic Pipeline:</strong> Engineered automated image preprocessing, normalization, and data augmentation to build resilience against varying field illumination and noise.
+                    </li>
+                    <li>
+                      <strong>Deployed Diagnostic Web Application:</strong> Encapsulated the trained deep learning model into a production-ready web application enabling farmers to upload leaf photos and receive instantaneous disease diagnoses.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rc-code-box">
+                  <div class="rc-code-header">
+                    <span>architecture_pipeline.py</span>
+                  </div>
+                  <pre><code><span class="cmt"># MobileNetV2 Transfer Learning Framework</span>
+<span class="kw">from</span> tensorflow.keras.applications <span class="kw">import</span> MobileNetV2
+<span class="kw">from</span> tensorflow.keras <span class="kw">import</span> layers, models
+
+base_model = MobileNetV2(weights=<span class="str">'imagenet'</span>, include_top=<span class="kw">False</span>)
+base_model.trainable = <span class="kw">False</span>  <span class="cmt"># Feature extraction</span>
+
+model = models.Sequential([
+    base_model,
+    layers.GlobalAveragePooling2D(),
+    layers.Dropout(<span class="num">0.2</span>),
+    layers.Dense(num_classes, activation=<span class="str">'softmax'</span>)
+])
+<span class="cmt"># Result: High diagnostic accuracy on field crop images</span></code></pre>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===================================================================
+               SECTION 5: EDUCATION.YAML
+               =================================================================== -->
+          <section id="education" class="doc-section sec-pad" data-section="education">
+            <div class="sec-path">
+              <span class="crumb">madhura-portfolio</span>
+              <span class="sep">›</span>
+              <span class="file-crumb">education.yaml</span>
+              <span class="badge-tag">Academic Background</span>
+            </div>
+
+            <div class="sec-header">
+              <span class="sec-label">// education.yaml — academic timeline</span>
+              <h2 class="sec-h">Education</h2>
+              <p class="sec-sub">
+                My academic journey in Computer Engineering, with strong foundations in algorithms, system software, mathematics, and data sciences.
+              </p>
+            </div>
+
+            <div class="timeline">
+
+              <!-- B.Tech -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="tc-meta">
+                    <span class="tc-date">Aug 2023 – Jun 2027</span>
+                    <span class="tc-loc">Pune, India</span>
+                  </div>
+                  <h3 class="tc-title">B.Tech. in Computer Engineering</h3>
+                  <div class="tc-inst">AISSMS Institute of Information Technology, Pune</div>
+                  <div class="tc-grade">
+                    <span class="grade-badge">CGPA: 7.34 / 10 (approx. 73.4%)</span>
+                    <span class="grade-status">Currently Pursuing (Class of 2027)</span>
+                  </div>
+                  <p class="tc-desc">
+                    Core Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems (DBMS), Operating Systems, Computer Networks, Machine Learning, and Software Engineering.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Higher Secondary (Class XII) -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="tc-meta">
+                    <span class="tc-date">Jun 2021 – Mar 2023</span>
+                    <span class="tc-loc">Pune, India</span>
+                  </div>
+                  <h3 class="tc-title">Higher Secondary Education (Class XII)</h3>
+                  <div class="tc-inst">MP International School and Junior College, Pune</div>
+                  <div class="tc-grade">
+                    <span class="grade-badge">Percentage: 73.67%</span>
+                  </div>
+                  <p class="tc-desc">
+                    Higher secondary coursework with specialization in Science and Mathematics.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Secondary Education (Class X) -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="tc-meta">
+                    <span class="tc-date">Jun 2020 – Mar 2021</span>
+                    <span class="tc-loc">Pune, India</span>
+                  </div>
+                  <h3 class="tc-title">Secondary Education (Class X)</h3>
+                  <div class="tc-inst">Kendriya Vidyalaya Ganeshkhind, Pune</div>
+                  <div class="tc-grade">
+                    <span class="grade-badge">Percentage: 90%</span>
+                  </div>
+                  <p class="tc-desc">
+                    Graduated with distinction with top performance in Science and Mathematics.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ===================================================================
+               SECTION 6: CERTIFICATIONS & ACHIEVEMENTS
+               =================================================================== -->
+          <section id="certifications" class="doc-section sec-pad" data-section="certifications">
+            <div class="sec-path">
+              <span class="crumb">madhura-portfolio</span>
+              <span class="sep">›</span>
+              <span class="file-crumb">certifications.json</span>
+              <span class="badge-tag">Credentials</span>
+            </div>
+
+            <div class="sec-header">
+              <span class="sec-label">// certifications.json — verified credentials</span>
+              <h2 class="sec-h">Certifications</h2>
+              <p class="sec-sub">
+                Professional industry certifications verifying practical competency in Generative AI, Advanced SQL, Full-Stack engineering, and Database administration.
+              </p>
+            </div>
+
+            <!-- Certifications Grid -->
+            <div class="cert-grid">
+              
+              <div class="cert-card">
+                <div class="cert-ic cert-ms">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>
+                </div>
+                <div class="cert-info">
+                  <h4>Generative AI &amp; Agents</h4>
+                  <p class="cert-issuer">Microsoft</p>
+                  <span class="cert-badge">Verified Credential</span>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-ic cert-hr">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                </div>
+                <div class="cert-info">
+                  <h4>SQL Advanced</h4>
+                  <p class="cert-issuer">HackerRank</p>
+                  <span class="cert-badge">Advanced SQL Mastery</span>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-ic cert-ey">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <div class="cert-info">
+                  <h4>Full Stack Development</h4>
+                  <p class="cert-issuer">EY / Edunet &bull; Apna College</p>
+                  <span class="cert-badge">End-to-End Web Systems</span>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-ic cert-ora">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <div class="cert-info">
+                  <h4>Database Foundations</h4>
+                  <p class="cert-issuer">Oracle Academy</p>
+                  <span class="cert-badge">Relational Schema &amp; Storage</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Achievements & Leadership Subsection -->
+            <div class="achieve-sec" id="achievements">
+              <div class="sec-label">// achievements.yaml — leadership &amp; competitive honors</div>
+              <h3 class="sec-h" style="font-size:24px; margin-top:6px;">Leadership &amp; Achievements</h3>
+
+              <div class="cards" style="margin-top:20px;">
+                
+                <div class="card">
+                  <div class="ic ic-leadership">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <h4>Leadership &amp; Ownership: Secretary, iConnect</h4>
+                  <p>
+                    Took end-to-end ownership of <strong>8+ technical and cultural events</strong> as Secretary of iConnect across two semesters, coordinating cross-functional student teams and managing event logistics for <strong>100+ attendees per event</strong>.
+                  </p>
+                </div>
+
+                <div class="card">
+                  <div class="ic ic-dsa">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  </div>
+                  <h4>Problem Solving: 200+ LeetCode Solved</h4>
+                  <p>
+                    Solved <strong>200+ Data Structures &amp; Algorithms problems on LeetCode</strong> spanning Easy, Medium, and Hard tiers, demonstrating solid mastery over arrays, linked lists, dynamic programming, trees, and graphs.
+                  </p>
+                </div>
+
+                <div class="card">
+                  <div class="ic ic-hackathon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  </div>
+                  <h4>Advitya Hackathon — IIT Bombay</h4>
+                  <p>
+                    Advanced past Round 1 of the national <strong>Advitya Hackathon at IIT Bombay</strong> by architecting and presenting a viable technology and business solution before an esteemed judging panel.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- ===================================================================
+               SECTION 7: CONTACT.SH (INTERACTIVE TERMINAL)
+               =================================================================== -->
+          <section id="contact" class="doc-section sec-pad" data-section="contact" style="background:var(--bg-2); border-top:1px solid var(--border);">
+            <div class="sec-path">
+              <span class="crumb">madhura-portfolio</span>
+              <span class="sep">›</span>
+              <span class="file-crumb">contact.sh</span>
+              <span class="badge-tag">Shell Script</span>
+            </div>
+
+            <div class="sec-header">
+              <span class="sec-label">// contact.sh — get in touch &amp; collaborate</span>
+              <h2 class="sec-h">Get In Touch</h2>
+              <p class="sec-sub">
+                I am actively seeking Software Engineering, AI/ML, and Data Analytics internship opportunities.
+                Reach out directly via email, connect on LinkedIn, or inspect my repositories on GitHub.
+              </p>
+            </div>
+
+            <div class="contact-grid">
+              
+              <!-- Left: Interactive Terminal -->
+              <div class="term-wrapper">
+                <div class="term">
+                  <div class="term-bar">
+                    <span class="dots">
+                      <span class="dot r" style="width:10px;height:10px"></span>
+                      <span class="dot y" style="width:10px;height:10px"></span>
+                      <span class="dot g" style="width:10px;height:10px"></span>
+                    </span>
+                    <span class="term-title">zsh — contact.sh (interactive)</span>
+                  </div>
+
+                  <div class="term-body" id="term-body">
+                    <div class="term-line">
+                      <span class="pr">madhura@portfolio</span> <span class="dim-path">~ %</span> <span class="out">cat contact_card.json</span>
+                    </div>
+                    <pre class="term-json">{
+  <span class="key">"name"</span>: <span class="str">"Madhura Kale"</span>,
+  <span class="key">"role"</span>: <span class="str">"Computer Engineering Undergraduate (2027)"</span>,
+  <span class="key">"status"</span>: <span class="str">"Open to Internships / Opportunities"</span>,
+  <span class="key">"email"</span>: <span class="str">"madhurakale0807@gmail.com"</span>,
+  <span class="key">"phone"</span>: <span class="str">"+91 9607029819"</span>,
+  <span class="key">"location"</span>: <span class="str">"Pune, Maharashtra, India"</span>,
+  <span class="key">"github"</span>: <span class="str">"https://github.com/Madhura0807"</span>,
+  <span class="key">"linkedin"</span>: <span class="str">"https://linkedin.com/in/madhura-kale-979833291"</span>,
+  <span class="key">"languages"</span>: [<span class="str">"English (Fluent)"</span>, <span class="str">"Hindi (Fluent)"</span>, <span class="str">"Marathi (Native)"</span>]
+}</pre>
+                    <div class="term-line">
+                      <span class="pr">madhura@portfolio</span> <span class="dim-path">~ %</span> <span class="term-cursor"></span>
+                    </div>
+                  </div>
+
+                  <div class="term-quick-actions">
+                    <button class="tqa-btn" id="copy-email-btn" title="Copy email address to clipboard">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                      <span>Copy Email</span>
+                    </button>
+                    <button class="tqa-btn" id="copy-phone-btn" title="Copy phone number to clipboard">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      <span>Copy Phone</span>
+                    </button>
+                    <a href="mailto:madhurakale0807@gmail.com" class="tqa-btn tqa-highlight">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                      <span>Send Direct Email</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Direct Message Card -->
+              <div class="contact-card">
+                <h3>Send a Quick Message</h3>
+                <p>Have an internship role, collaborative project, or question? Send a note directly below:</p>
+
+                <form class="contact-form" id="contact-form">
+                  <div class="form-group">
+                    <label for="c-name">Your Name</label>
+                    <input type="text" id="c-name" placeholder="e.g. Alex Morgan" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="c-email">Your Email</label>
+                    <input type="email" id="c-email" placeholder="e.g. alex@company.com" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="c-msg">Message</label>
+                    <textarea id="c-msg" rows="4" placeholder="Hi Madhura, we'd love to connect with you regarding our software engineering / AI internship..." required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    <span>Send Message</span>
+                  </button>
+                  <p class="form-notice">Submitting opens your default email client addressed to madhurakale0807@gmail.com.</p>
+                </form>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Footer Credit -->
+          <footer class="doc-footer">
+            <div class="df-content">
+              <span>Designed &amp; Built for <strong>Madhura Kale</strong> &bull; Class of 2027</span>
+              <span>Pune, Maharashtra, India &bull; Inspired by modern developer IDE environments</span>
+            </div>
+          </footer>
+
+        </div>
+      </main>
+
+    </div>
+
+    <!-- Bottom VS Code Statusbar -->
+    <footer class="statusbar" role="contentinfo">
+      <div class="s git-status" title="Git Branch: main">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M6 8.5v7"/><circle cx="18" cy="8" r="2.5"/><path d="M18 10.5c0 4-6 2.5-6 7.5"/></svg>
+        <span>main*</span>
+      </div>
+      <div class="s" title="Error &amp; Warning count">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3L22 4"/></svg>
+        <span>0 errors, 0 warnings</span>
+      </div>
+      
+      <div class="sb-spacer"></div>
+
+      <div class="s hide-mobile">Spaces: 2</div>
+      <div class="s hide-mobile">UTF-8</div>
+      <div class="s hide-mobile">Python 3.11</div>
+      <div class="s av">
+        <span class="status-dot"></span>
+        <span>Open to Internships</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Command Palette Modal (Ctrl+K) -->
+  <div class="modal-backdrop" id="cmd-modal" aria-hidden="true">
+    <div class="cmd-palette" role="dialog" aria-modal="true" aria-labelledby="cmd-input">
+      <div class="cmd-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="cmd-input" placeholder="Type a section name or command (e.g., projects, skills, email, theme)..." autocomplete="off" />
+        <span class="kbd-esc">ESC</span>
+      </div>
+      <div class="cmd-results" id="cmd-results">
+        <div class="cmd-item active" data-action="go" data-target="about">
+          <span class="ic ext-md">M↓</span>
+          <span class="ci-text">Go to <strong>About Me (Hero)</strong></span>
+          <span class="ci-hint">about.md</span>
+        </div>
+        <div class="cmd-item" data-action="go" data-target="skills">
+          <span class="ic ext-json">{}</span>
+          <span class="ci-text">Go to <strong>Technical Skills &amp; Stack</strong></span>
+          <span class="ci-hint">skills.json</span>
+        </div>
+        <div class="cmd-item" data-action="go" data-target="projects">
+          <span class="ic ext-py">py</span>
+          <span class="ci-text">Go to <strong>Featured Projects (ML, RAG, CV)</strong></span>
+          <span class="ci-hint">projects/</span>
+        </div>
+        <div class="cmd-item" data-action="go" data-target="research">
+          <span class="ic ext-py">★</span>
+          <span class="ci-text">Go to <strong>Research Publication (IJCRT)</strong></span>
+          <span class="ci-hint">research_paper.py</span>
+        </div>
+        <div class="cmd-item" data-action="go" data-target="education">
+          <span class="ic ext-yaml">≣</span>
+          <span class="ci-text">Go to <strong>Education (AISSMS IOIT Pune)</strong></span>
+          <span class="ci-hint">education.yaml</span>
+        </div>
+        <div class="cmd-item" data-action="go" data-target="certifications">
+          <span class="ic ext-json">{}</span>
+          <span class="ci-text">Go to <strong>Certifications &amp; Achievements</strong></span>
+          <span class="ci-hint">certifications.json</span>
+        </div>
+        <div class="cmd-item" data-action="go" data-target="contact">
+          <span class="ic ext-sh">$_</span>
+          <span class="ci-text">Go to <strong>Contact &amp; Terminal</strong></span>
+          <span class="ci-hint">contact.sh</span>
+        </div>
+        <div class="cmd-item" data-action="copy" data-target="email">
+          <span class="ic">✉</span>
+          <span class="ci-text">Copy Email: <strong>madhurakale0807@gmail.com</strong></span>
+          <span class="ci-hint">clipboard</span>
+        </div>
+        <div class="cmd-item" data-action="toggle" data-target="theme">
+          <span class="ic">◐</span>
+          <span class="ci-text">Toggle <strong>Dark / Light Theme</strong></span>
+          <span class="ci-hint">theme</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
