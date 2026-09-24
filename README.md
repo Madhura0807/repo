@@ -1,7 +1,4 @@
 # Madhura Kale — Developer Portfolio
-
-A modern, high-performance personal developer portfolio inspired by the VS Code / IDE design language of [anhnq15.github.io](https://anhnq15.github.io/), tailored for **Madhura Kale** (Computer Engineering Undergraduate, Class of 2027 at AISSMS IOIT Pune) specializing in **Data Science, Machine Learning, Generative AI, and Software Engineering**.
-
 ---
 
 ## 🚀 Key Features & Highlights
