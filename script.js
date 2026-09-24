@@ -399,6 +399,62 @@
     });
   }
 
+  /* ==========================================================================
+     8.5. CERTIFICATE PREVIEW MODAL
+     ========================================================================== */
+  const certModal = document.getElementById('cert-modal');
+  const certModalImg = document.getElementById('cert-modal-img');
+  const certModalTitle = document.getElementById('cert-modal-title');
+  const certModalLink = document.getElementById('cert-modal-link');
+  const certModalClose = document.getElementById('cert-modal-close');
+
+  function openCertModal(imgSrc, title, docLink) {
+    if (!certModal || !certModalImg) return;
+    certModalImg.src = imgSrc || '';
+    certModalImg.alt = title || 'Certificate Preview';
+    if (certModalTitle) certModalTitle.textContent = title || 'Certificate Preview';
+    if (certModalLink) {
+      if (docLink) {
+        certModalLink.href = docLink;
+        certModalLink.style.display = 'inline-flex';
+      } else {
+        certModalLink.style.display = 'none';
+      }
+    }
+    certModal.classList.add('open');
+    certModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertModal() {
+    if (!certModal) return;
+    certModal.classList.remove('open');
+    certModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (certModalClose) {
+    certModalClose.addEventListener('click', closeCertModal);
+  }
+
+  if (certModal) {
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) closeCertModal();
+    });
+  }
+
+  document.querySelectorAll('.cert-thumb-wrap, .cert-preview-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const imgSrc = btn.getAttribute('data-cert-img');
+      const title = btn.getAttribute('data-cert-title');
+      const docLink = btn.getAttribute('data-cert-link');
+      if (imgSrc) {
+        openCertModal(imgSrc, title, docLink);
+      }
+    });
+  });
+
   // Global Keyboard Shortcuts
   document.addEventListener('keydown', (e) => {
     // Open Palette with Ctrl+K or Cmd+K
@@ -413,6 +469,7 @@
     // Close with Escape
     if (e.key === 'Escape') {
       closeCmdPalette();
+      closeCertModal();
       if (sidebar && sidebar.classList.contains('open')) {
         sidebar.classList.remove('open');
       }

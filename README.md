@@ -1,6 +1,6 @@
 # Madhura Kale — Developer Portfolio
 
-A modern, high-performance personal developer portfolio inspired by [anhnq15.github.io](https://anhnq15.github.io/), tailored for **Madhura Kale** (Computer Engineering Undergraduate, Class of 2027 at AISSMS IOIT Pune) specializing in **Data Science, Machine Learning, Generative AI, and Software Engineering**.
+A modern, high-performance personal developer portfolio inspired by the VS Code / IDE design language of [anhnq15.github.io](https://anhnq15.github.io/), tailored for **Madhura Kale** (Computer Engineering Undergraduate, Class of 2027 at AISSMS IOIT Pune) specializing in **Data Science, Machine Learning, Generative AI, and Software Engineering**.
 
 ---
 
@@ -13,7 +13,11 @@ A modern, high-performance personal developer portfolio inspired by [anhnq15.git
    - **Editor Tabs**: Synchronized tab bar highlighting current document view as you navigate or scroll.
    - **Status Bar**: Live VS Code status bar showing git branch (`main*`), error diagnostics, spaces, encoding, Python version, and internship availability status.
 
-2. **Source of Truth (Resume Aligned)**:
+2. **Interactive Command Palette (`Ctrl+K`)**:
+   - Quick navigation between sections (`about`, `skills`, `projects`, `research`, `education`, `certifications`, `contact`).
+   - Quick actions to copy contact email and toggle Dark / Light themes with keyboard navigation.
+
+3. **Source of Truth (Resume Aligned)**:
    - **Education**: B.Tech in Computer Engineering at AISSMS IOIT, Pune (CGPA: 7.34 / 10), MP International (73.67%), Kendriya Vidyalaya Ganeshkhind (90%).
    - **Technical Skills**: Filterable skill chips categorized by Data & Analytics, Machine Learning & CV, Generative AI & LLMs, Programming Languages, Backend, Databases, and Core CS Fundamentals.
    - **6 Applied Projects**:
@@ -24,10 +28,18 @@ A modern, high-performance personal developer portfolio inspired by [anhnq15.git
      - *Student Performance Prediction* (Regression Pipeline, R²: 0.692)
      - *IBM HR Employee Attrition Prediction* (1,470 records, Power BI dashboard)
    - **Peer-Reviewed Research Publication**: Dedicated spotlight card for the paper published in **IJCRT** on *MobileNetV2 Transfer Learning Framework for Plant Leaf Disease Classification*.
-   - **Certifications & Leadership**: Microsoft Generative AI, HackerRank SQL Advanced, EY/Edunet Full Stack, Oracle Database Foundations, iConnect Secretary (8+ events, 100+ attendees), 200+ LeetCode DSA solved, and IIT Bombay Advitya Hackathon.
+   - **Interactive Certifications & Lightbox**:
+     - *Building AI Agents with Snowflake* (GeeksforGeeks, ID: `9205d190a15e0969c4ada0d9ac17c180`)
+     - *The Joy of Computing Using Python* (NPTEL / Swayam / IIT Madras — Elite Award, 70% Score)
+     - *SQL (Advanced)* (HackerRank, ID: `1FE845F48FE1`)
+     - *Fundamentals of Agents* (Hugging Face Agents Course)
+     - *Delta Full Stack Web Development* (Apna College, ID: `67fa1790bef8484a5a084146`)
+     - *Generative AI & Agents* (Microsoft)
+     - *Database Foundations* (Oracle Academy)
+     - Each card features hover zoom, "View Certificate" high-res modal lightbox with ESC key dismissal, and direct official PDF links.
    - **Interactive Terminal & Contact**: Shell card with JSON card output, copy email/phone buttons, and direct mailto form.
 
-3. **Performance & Technology**:
+4. **Performance & Technology**:
    - Pure Semantic HTML5, CSS3 Variables, and Vanilla ES6+ JavaScript.
    - Zero external libraries or heavy bundles — loads instantly and runs at silky 60fps.
    - Fully responsive across desktop, laptop, tablet, and mobile with drawer navigation.
@@ -37,11 +49,22 @@ A modern, high-performance personal developer portfolio inspired by [anhnq15.git
 ## 📂 Project Structure
 
 ```text
-madhura-portfolio/
-├── index.html       # Complete semantic structure & IDE layout
-├── styles.css       # Dark/Light theme variables, layouts & animations
-├── script.js        # Tabs sync, theme toggle, copy actions, command palette
-└── README.md        # Documentation and deployment guide
+repo/
+├── index.html                  # Core portfolio page & IDE simulated interface
+├── styles.css                  # Theme tokens, VS Code styling & responsive layouts
+├── script.js                   # Tab sync, theme switch, command palette & lightbox
+├── Madhura_Kale_Resume.pdf     # Official downloadable verified resume
+├── profile.jpg                 # Personal profile photograph
+├── certificates/               # High-res certificate previews and official PDFs
+│   ├── apna-college-delta-fullstack.pdf
+│   ├── apna-college-delta-fullstack.png
+│   ├── geeksforgeeks-snowflake-ai-agents.pdf
+│   ├── geeksforgeeks-snowflake-ai-agents.png
+│   ├── hackerrank-sql-advanced.png
+│   ├── huggingface-agents.webp
+│   ├── nptel-python-iit-madras.pdf
+│   └── nptel-python-iit-madras.png
+└── README.md                   # Documentation and deployment guide
 ```
 
 ---
@@ -63,16 +86,7 @@ Then visit `http://localhost:8000` in Chrome, Edge, or Firefox.
 
 ## 🌐 Deploy to GitHub Pages
 
-To host your portfolio for free on your personal domain (`https://madhura0807.github.io`):
-
-1. Create a new GitHub repository named `Madhura0807.github.io` (or `portfolio`).
-2. Push this project folder to the repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial release of modern IDE portfolio"
-   git branch -M main
-   git remote add origin https://github.com/Madhura0807/Madhura0807.github.io.git
-   git push -u origin main
-   ```
-3. Your site will automatically go live at `https://madhura0807.github.io`!
+To host your portfolio live on GitHub Pages:
+1. In the repository settings on GitHub (`https://github.com/Madhura0807/repo/settings/pages`), under **Source**, select **Deploy from a branch**.
+2. Select branch `main` and folder `/ (root)`, then click **Save**.
+3. Your site will automatically go live at `https://madhura0807.github.io/repo/`!
