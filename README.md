@@ -17,7 +17,8 @@
 3. **Source of Truth (Resume Aligned)**:
    - **Education**: B.Tech in Computer Engineering at AISSMS IOIT, Pune (CGPA: 7.34 / 10), MP International (73.67%), Kendriya Vidyalaya Ganeshkhind (90%).
    - **Technical Skills**: Filterable skill chips categorized by Data & Analytics, Machine Learning & CV, Generative AI & LLMs, Programming Languages, Backend, Databases, and Core CS Fundamentals.
-   - **6 Applied Projects**:
+   - **7 Applied Projects**:
+     - *Vector Database from Scratch + RAG* (Python, FastAPI, NumPy, HNSW, KD-Tree, KNN, Ollama, nomic-embed-text, llama3.2, PCA Visualization)
      - *Customer Churn Analysis and Prediction* (Python, Scikit-learn, XGBoost, Power BI, DAX, SQL)
      - *Legal Document Reader (RAG System)* (FastAPI, RAG, FAISS, Groq LLM, React.js, FastEmbed)
      - *Transaction Intelligence Engine* (Python, NLP, RapidFuzz, Groq LLM)
@@ -31,6 +32,7 @@
      - *SQL (Advanced)* (HackerRank, ID: `1FE845F48FE1`)
      - *Fundamentals of Agents* (Hugging Face Agents Course)
      - *Delta Full Stack Web Development* (Apna College, ID: `67fa1790bef8484a5a084146`)
+     - *Frontend Web Development with ReactJS* (Google Developer Student Clubs &amp; DevTown)
      - *Generative AI & Agents* (Microsoft)
      - *Database Foundations* (Oracle Academy)
      - Each card features hover zoom, "View Certificate" high-res modal lightbox with ESC key dismissal, and direct official PDF links.
@@ -55,6 +57,8 @@ repo/
 ├── certificates/               # High-res certificate previews and official PDFs
 │   ├── apna-college-delta-fullstack.pdf
 │   ├── apna-college-delta-fullstack.png
+│   ├── devtown-gdsc-frontend-react.pdf
+│   ├── devtown-gdsc-frontend-react.png
 │   ├── geeksforgeeks-snowflake-ai-agents.pdf
 │   ├── geeksforgeeks-snowflake-ai-agents.png
 │   ├── hackerrank-sql-advanced.png

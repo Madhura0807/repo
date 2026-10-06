@@ -120,6 +120,10 @@
               <span class="folder-name">projects/</span>
             </div>
             <div class="nest">
+              <div class="file" data-go="projects" data-proj="vectordb" role="treeitem" tabindex="0">
+                <span class="ic ext-py" aria-hidden="true">py</span>
+                <span class="filename">vector_db_hnsw.py</span>
+              </div>
               <div class="file" data-go="projects" data-proj="churn" role="treeitem" tabindex="0">
                 <span class="ic ext-py" aria-hidden="true">py</span>
                 <span class="filename">churn_prediction.py</span>
@@ -448,6 +452,10 @@
                 <div class="chips">
                   <span class="chip"><span class="b"></span>LLMs</span>
                   <span class="chip"><span class="b"></span>RAG (Retrieval-Augmented Generation)</span>
+                  <span class="chip"><span class="b"></span>Vector DB from Scratch</span>
+                  <span class="chip"><span class="b"></span>HNSW &amp; KD-Tree Search</span>
+                  <span class="chip"><span class="b"></span>Ollama (llama3.2)</span>
+                  <span class="chip"><span class="b"></span>nomic-embed-text</span>
                   <span class="chip"><span class="b"></span>LangChain</span>
                   <span class="chip"><span class="b"></span>Prompt Engineering</span>
                   <span class="chip"><span class="b"></span>Embedding Generation</span>
@@ -565,6 +573,71 @@
             </div>
 
             <div class="proj-grid">
+
+              <!-- Project: Vector Database from Scratch + RAG -->
+              <article class="proj feat" id="proj-vectordb">
+                <div class="proj-top">
+                  <div class="proj-ic vi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  </div>
+                  <div class="proj-badges">
+                    <span class="tag tag-accent">Featured AI Systems</span>
+                    <span class="tag">Algorithms from Scratch</span>
+                    <span class="tag">Local LLM &amp; RAG</span>
+                  </div>
+                </div>
+
+                <h3>Vector Database from Scratch + RAG</h3>
+                <p class="proj-desc">
+                  High-performance custom vector search database built from first principles implementing HNSW, KD-Tree, and Brute-Force KNN search,
+                  coupled with an end-to-end document-to-RAG generation pipeline, real-time algorithm benchmarking, and interactive graph visualizations.
+                </p>
+
+                <!-- Project Highlights List -->
+                <ul class="proj-bullets">
+                  <li><strong>Custom Vector Search Engine:</strong> Built a custom vector database implementing HNSW, KD-Tree, and Brute-Force KNN search from scratch, supporting Cosine, Euclidean, and Manhattan distance metrics for vector similarity search.</li>
+                  <li><strong>Document-to-RAG Pipeline:</strong> Developed a document-to-RAG pipeline that chunks documents, generates 768-dimensional embeddings using Ollama nomic-embed-text, indexes them with HNSW, and retrieves relevant context for llama3.2 generation.</li>
+                  <li><strong>FastAPI &amp; Interactive Web UI:</strong> Implemented a FastAPI REST API and interactive web UI with algorithm benchmarking, PCA visualization, HNSW graph visualization, document search, and RAG querying using real indexed data.</li>
+                </ul>
+
+                <!-- Key Metrics -->
+                <div class="proj-metrics">
+                  <div class="pm-item">
+                    <span class="pm-val">HNSW &amp; KD-Tree</span>
+                    <span class="pm-lbl">Search from Scratch</span>
+                  </div>
+                  <div class="pm-item">
+                    <span class="pm-val">768-Dim</span>
+                    <span class="pm-lbl">Ollama nomic-embed</span>
+                  </div>
+                  <div class="pm-item">
+                    <span class="pm-val">llama3.2</span>
+                    <span class="pm-lbl">Local RAG Generation</span>
+                  </div>
+                </div>
+
+                <!-- Tech Tags -->
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">HNSW</span>
+                  <span class="tech-tag">KD-Tree</span>
+                  <span class="tech-tag">KNN Search</span>
+                  <span class="tech-tag">Ollama</span>
+                  <span class="tech-tag">nomic-embed-text</span>
+                  <span class="tech-tag">llama3.2</span>
+                  <span class="tech-tag">RAG Pipeline</span>
+                  <span class="tech-tag">PCA Visualization</span>
+                </div>
+
+                <div class="proj-footer">
+                  <a href="https://github.com/Madhura0807" target="_blank" rel="noopener noreferrer" class="proj-link">
+                    <span>View on GitHub</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  </a>
+                </div>
+              </article>
 
               <!-- Project 1: Customer Churn Analysis & Prediction -->
               <article class="proj feat" id="proj-churn">
@@ -1197,7 +1270,46 @@ model = models.Sequential([
                 </div>
               </div>
 
-              <!-- 6. Generative AI & Agents - Microsoft -->
+              <!-- 6. Frontend Web Development with JavaScript & ReactJS (GDSC & DevTown) -->
+              <div class="cert-card">
+                <div class="cert-thumb-wrap" data-cert-img="certificates/devtown-gdsc-frontend-react.png" data-cert-title="Frontend Web Development with JavaScript and ReactJS — Google Developer Student Clubs &amp; DevTown" data-cert-link="certificates/devtown-gdsc-frontend-react.pdf">
+                  <img src="certificates/devtown-gdsc-frontend-react.png" alt="Frontend Web Development with JavaScript and ReactJS — GDSC &amp; DevTown" class="cert-thumb" loading="lazy" />
+                  <div class="cert-overlay">
+                    <span class="cert-zoom-btn">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                      View Preview
+                    </span>
+                  </div>
+                </div>
+                <div class="cert-body">
+                  <div class="cert-top">
+                    <div class="cert-ic cert-gdsc">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <div class="cert-info">
+                      <h4>Frontend Web Development with ReactJS</h4>
+                      <p class="cert-issuer">Google Developer Student Clubs &bull; DevTown</p>
+                    </div>
+                  </div>
+                  <div class="cert-meta-tags">
+                    <span class="cert-tag cert-tag-accent">ReactJS</span>
+                    <span class="cert-tag">JavaScript ES6+</span>
+                    <span class="cert-tag">Bootcamp</span>
+                  </div>
+                  <div class="cert-actions">
+                    <button class="cert-btn-link cert-preview-btn" data-cert-img="certificates/devtown-gdsc-frontend-react.png" data-cert-title="Frontend Web Development with JavaScript and ReactJS — Google Developer Student Clubs &amp; DevTown" data-cert-link="certificates/devtown-gdsc-frontend-react.pdf">
+                      <span>View Certificate</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    </button>
+                    <a href="certificates/devtown-gdsc-frontend-react.pdf" target="_blank" class="cert-btn-link" title="Open Official PDF">
+                      <span>PDF</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7. Generative AI & Agents - Microsoft -->
               <div class="cert-card">
                 <div class="cert-body">
                   <div class="cert-top">
