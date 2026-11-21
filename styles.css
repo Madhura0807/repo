@@ -1590,6 +1590,7 @@ html[data-theme="light"] .rc-code-box {
 .cert-nptel { background: rgba(234, 88, 12, 0.12); color: #ea580c; }
 .cert-hf { background: rgba(251, 191, 36, 0.12); color: #fbbf24; }
 .cert-gdsc { background: rgba(66, 133, 244, 0.12); color: #4285f4; }
+.cert-gold { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
 
 .cert-info h4 {
   font-family: var(--disp);
